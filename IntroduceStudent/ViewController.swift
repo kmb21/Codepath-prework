@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         // Creating a constant of type string that holds an introduction. The introduction receives the values from the outlet connections.
         
-        let introduction = "My name is \(firstNameTextField.text!) \(lastNameTextField.text!) and I school at  \(schoolNameTextField.text!). I am currently in my \(year!) year and I own \(numberOfPetsLabel.text!) dog(s). It is \(morePetsSwitch.isOn) that I want more pets."
+        let introduction = "My name is \(firstNameTextField.text!) \(lastNameTextField.text!) and I school at  \(schoolNameTextField.text!). I am currently in my \(year!) year and I own \(numberOfPetsLabel.text!) dog(s). It is \(morePetsSwitch.isOn) that I want many more pets."
         
         // Creates the alert where we pass in our message, which our introduction.
         let alertController = UIAlertController(title: "My Introduction", message: introduction, preferredStyle: .alert)
@@ -49,6 +49,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         self.view.backgroundColor = UIColor(red: 173/255.0, green: 216/255.0, blue: 230/255.0, alpha: 1)
         let font = UIFont(name: "HelveticaNeue-Thin", size: 16.0)!
         
